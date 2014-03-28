@@ -1,0 +1,57 @@
+/* CSS declarations go here */
+
+#userConnection {
+	white-space: pre;
+	font-family: monospace;
+}
+#login-buttons {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	padding: 1em;
+	width: 200px;
+}
+.error-message {
+	color: red;
+}
+a.login-close-text {
+	float: right;
+	margin-top: -2.2em;
+}
+.login-button {
+	padding: 5px;
+	background-color: orange;
+	text-align: center;
+	border-radius: 4px;
+}
+.login-password-form {
+	margin-top: 1em;
+}
+.additional-link-container {
+	display: inline;
+}
+
+.idle {
+	padding:2px 10px;
+	color: white;
+	border:1px solid #fff;
+	border-radius: 10px;
+}
+.success {
+	background-color: green;
+}
+.error {
+	background-color: red;
+}
+
+.user-idle {
+	color: yellow;
+	background-color: red;
+}
+
+.user-active {
+	color: blue;
+	background-color: transparent;
+}

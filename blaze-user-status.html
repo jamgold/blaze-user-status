@@ -1,0 +1,26 @@
+<head>
+  <title>blaze-user-status</title>
+</head>
+
+<body>
+  {{> hello}}
+  {{> loginButtons}}
+  {{> users}}
+</body>
+
+<template name="hello">
+  <h1>Hello World! {{{isMonitoring}}}</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+<template name="users">
+	<ul>
+	{{#each user}}
+	<li><a href="#" class="{{isIdle status.idle}}" userid="{{_id}}">{{username}}</a> <span class="lastLogin">{{lastLogin status.lastLogin}}</span></li>
+	{{/each}}
+	</ul>
+	
+	<div id="userConnection">
+	</div>
+</template>
